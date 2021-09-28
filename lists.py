@@ -11,3 +11,9 @@ california = None
 last_two_states = None
 
 reversed_numbers = None
+
+# write a function that checks if an item is 'in' a list
+
+
+def has_item(the_list, item):
+    pass

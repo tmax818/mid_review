@@ -8,14 +8,17 @@ sys.path.insert(1, '../mid_review')
 
 class TestMain(unittest.TestCase):
 
+    message = '\033[31m' + 'Change code in data_types.py!''\033[39m'
+
     def test_int(self):
-        self.assertIsInstance(integer_type, int, "change None to an integer!")
+        self.assertIsInstance(integer_type, int, self.message)
 
     def test_float(self):
-        self.assertIsInstance(float_type, float, "change None to a float")
+        print(self.longMessage)
+        self.assertIsInstance(float_type, float, self.message)
 
     def test_str(self):
-        self.assertIsInstance(str_type, str, "change None to a string!")
+        self.assertIsInstance(str_type, str, self.message)
 
     def test_none(self):
-        self.assertIsNone(none_type, "That one was already done!!!!")
+        self.assertIsNone(none_type, self.message)
