@@ -2,8 +2,8 @@
 
 none_type = None
 
-integer_type = 42
+integer_type = None
 
-float_type = 3.14
+float_type = None
 
-str_type = "None"
+str_type = None
